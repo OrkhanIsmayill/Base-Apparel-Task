@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans';
+
+}
+
+.mainContainer {
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.baseContainer {
+  width: 55%;
+  height: 100%;
+  background-image: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+  padding: 80px 150px;
+}
+
+
+.baseContent {
+  margin-top: 100px;
+
+  h1 {
+    letter-spacing: 15px;
+    font-size: 50px;
+    margin-bottom: 25px;
+    color: #5F5959;
+  }
+
+  span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 200;
+
+  }
+
+  p {
+    color: #be7e86;
+    font-weight: 500;
+  }
+
+}
+
+.baseImage {
+  width: 45%;
+  height: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.emailInput {
+  margin-top: 35px;
+
+
+  input {
+    height: 50px;
+    width: 320px;
+    padding: 20px;
+    border-radius: 25px;
+    border-color: hsl(0, 36%, 70%);
+
+  }
+
+  ::placeholder {
+    color: hsl(0, 36%, 70%);
+  }
+
+}
+
+.buttonDiv {
+  height: 50px;
+  width: 90px;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  position: relative;
+  z-index: 1;
+  left: 275px;
+  cursor: pointer;
+}
+
+.formDiv {
+  position: absolute;
+}
+
+
+.buttonDiv:hover {
+  background-image: linear-gradient(135deg, hsl(0, 88%, 90%), hsl(0, 77%, 79%));
+  left: 300px;
+
+}
+
+.inputButton {
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  width: 90px;
+  cursor: pointer;
+
+}
+
+.validMessage {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: hsl(0, 93%, 68%);
+
+}
+
+
+@media only screen and (max-width:375px) {
+  .mainContainer {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .baseContainer {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+    padding: 40px 40px 10px 40px;
+  }
+
+  .baseContent {
+    margin-top: 500px;
+    text-align: center;
+
+
+  }
+
+  .baseImage {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+    }
+  }
+
+  .emailInput {
+
+
+    input {
+      height: 50px;
+      width: 300px;
+
+
+    }
+
+  }
+
+  .buttonDiv {
+    height: 50px;
+    width: 70px;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  
+    position: relative;
+    z-index: 1;
+    left: 250px;
+    cursor: pointer;
+  }
+
+
+}
